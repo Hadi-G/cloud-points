@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Made with Thimble</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Welcome to the cloud points</h1>
+    <p>
+      Click inside the window to make appear some points !
+    </p>
+    
+    
+    
+    <script>
+    
+      const click = window.addEventListener('click', function(event){
+        
+        const div = document.createElement('img');
+        
+        div.setAttribute('src', 'https://cdn.shopify.com/s/files/1/1384/9983/products/solid_black_backdrop_large.png?v=1484565824');
+               
+        div.style.position = 'absolute';
+        div.style.left = event.x+'px';
+        div.style.top = event.y+'px';
+        div.style.width = '2px';
+        div.style.heigth = '2px';
+//        div.style.backgroundColor = "black";
+//        div.value="ggg";
+
+        document.body.appendChild(div);
+        
+        
+        
+      });
+      
+    
+    </script>
+    
+    
+    
+  </body>
+</html>
